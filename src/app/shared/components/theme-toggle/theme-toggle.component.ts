@@ -6,15 +6,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ThemeService } from '../../services/theme.service';
 
 @Component({
-    selector: 'app-theme-toggle',
-    imports: [
-        MatButtonModule,
-        MatCardModule,
-        MatIcon,
-        MatIconButton,
-        MatTooltipModule,
-    ],
-    template: `
+  selector: 'app-theme-toggle',
+  imports: [
+    MatButtonModule,
+    MatCardModule,
+    MatIcon,
+    MatIconButton,
+    MatTooltipModule,
+  ],
+  template: `
     <div class="fixed top-0 right-0">
       <button
         type="button"
@@ -30,7 +30,7 @@ import { ThemeService } from '../../services/theme.service';
       </button>
     </div>
   `,
-    styles: ``
+  styles: ``,
 })
 export class ThemeToggleComponent {
   public themeService = inject(ThemeService);
