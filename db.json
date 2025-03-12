@@ -1,5 +1,12 @@
 {
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "2a5e",
+      "title": "Arrumar a cama",
+      "categoryId": "1",
+      "isCompleted": false
+    }
+  ],
   "categories": [
     {
       "id": "1",

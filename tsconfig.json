@@ -2,8 +2,10 @@
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
+  "typeRoots": ["@angular/core/rxjs-interop"],
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "types": ["jest", "node"],
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

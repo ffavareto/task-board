@@ -1,0 +1,10 @@
+services:
+  my-task-board:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-task-board:v1
+    container_name: my-task-board
+    restart: on-failure
+    ports:
+      - 4200:4200
