@@ -4,9 +4,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { TaskComponent } from '../../features/task/view/task/task.component';
 
 @Component({
-    selector: 'app-main',
-    imports: [CategoryComponent, MatDividerModule, TaskComponent],
-    template: `
+  selector: 'app-main',
+  imports: [CategoryComponent, MatDividerModule, TaskComponent],
+  template: `
     <div class="h-screen flex w-full">
       <!-- Categorias -->
       <app-category class="w-1/4" />
@@ -18,6 +18,6 @@ import { TaskComponent } from '../../features/task/view/task/task.component';
       <app-task class="w-3/4 pt-10" />
     </div>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainComponent {}

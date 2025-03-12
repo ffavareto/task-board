@@ -3,14 +3,14 @@ import { MainListComponent } from '../../components/main-list/main-list.componen
 import { ColorsListComponent } from '../../components/colors-list/colors-list.component';
 
 @Component({
-    selector: 'app-category',
-    imports: [MainListComponent, ColorsListComponent],
-    template: `
+  selector: 'app-category',
+  imports: [MainListComponent, ColorsListComponent],
+  template: `
     <div class="flex flex-col justify-between h-full w-full">
       <app-main-list />
       <app-colors-list />
     </div>
   `,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CategoryComponent {}
