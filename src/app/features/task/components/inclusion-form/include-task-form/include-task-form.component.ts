@@ -20,18 +20,17 @@ import { NgClass } from '@angular/common';
 import { SnackBarService } from '../../../../../shared/services/snack-bar.service';
 
 @Component({
-  selector: 'app-include-task-form',
-  standalone: true,
-  imports: [
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-    MatSelectModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgClass,
-  ],
-  template: `
+    selector: 'app-include-task-form',
+    imports: [
+        MatFormFieldModule,
+        MatIconModule,
+        MatInputModule,
+        MatSelectModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgClass,
+    ],
+    template: `
     <form
       [ngClass]="{
         'cursor-not-allowed animate-pulse': isIncludedTaskFormDisabled(),
@@ -63,7 +62,7 @@ import { SnackBarService } from '../../../../../shared/services/snack-bar.servic
       </mat-form-field>
     </form>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IncludeTaskFormComponent {
   private readonly categoryService = inject(CategoryService);

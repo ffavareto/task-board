@@ -4,10 +4,9 @@ import { CategoryService } from '../../services/category.service';
 import { categoryBackgroundColors } from '../../constants/category-colors';
 
 @Component({
-  selector: 'app-colors-list',
-  standalone: true,
-  imports: [MatDividerModule],
-  template: `
+    selector: 'app-colors-list',
+    imports: [MatDividerModule],
+    template: `
     <section class="flex flex-col gap-4 w-full h-auto mb-4">
       <mat-divider class="opacity-50" />
       <!-- Lista de cores -->
@@ -23,7 +22,7 @@ import { categoryBackgroundColors } from '../../constants/category-colors';
       </div>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ColorsListComponent {
   private readonly categoryService = inject(CategoryService);

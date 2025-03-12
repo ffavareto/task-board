@@ -6,10 +6,9 @@ import { TaskService } from '../../services/task.service';
 import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-inclusion-form',
-  standalone: true,
-  imports: [IncludeTaskFormComponent, NgClass],
-  template: `
+    selector: 'app-inclusion-form',
+    imports: [IncludeTaskFormComponent, NgClass],
+    template: `
     <div class="grid grid-cols-12 gap-2 mt-8">
       <app-include-task-form class="col-span-11" />
       <div
@@ -25,7 +24,7 @@ import { NgClass } from '@angular/common';
       </div>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InclusionFormComponent {
   private readonly categoryService = inject(CategoryService);
